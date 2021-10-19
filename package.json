@@ -1,0 +1,25 @@
+{
+  "name": "ms_exp1",
+  "version": "1.0.0",
+  "description": "nodejs image",
+  "main": "login.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "bootstraps",
+    "mysql",
+    "express"
+  ],
+  "author": "Dhruv Soni",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "encoder": "^0.2.4",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mysql": "^2.18.1",
+    "req-flash": "0.0.3"
+  }
+}
