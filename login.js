@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({extended : true}));
 app.use(bodyParser.json());
 
 app.get('/', function(request, response) {
-	response.sendFile(path.join(__dirname + '/web/login.html'));
+	response.sendFile(path.join(__dirname + '/web/index.html'));
 });
 
 
@@ -35,7 +35,7 @@ app.post('/register', function(request, response) {
 	if (email && name && password) {
 		connection.query('INSERT INTO `users`(`email`,`name`,`password`) VALUES(?,?,?)', [email,name, password], function(error, results, fields) {
 			if (connection.query == true) {
-				response.redirect(__dirname+'/auth');
+				response.redirect(__dirname+'/web/index.html');
 			} else {
 				response.send('');
 			}			
