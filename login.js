@@ -69,7 +69,8 @@ app.post('/login', function(request, response) {
 
 app.get('/home', function(request, response) {
 	if (request.session.loggedin) {
-		response.sendFile(__dirname +'/web/index.html', request.session.name );
+		// response.(__dirname +'./web/index.html', request.session.name );
+		window.location.href="/web/index.html";
 	} else {
 		response.send('Please login to view this page!');
 	}
